@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local DESTROYER = Instance.new("ScreenGui")
 local MAIN = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -30,8 +35,10 @@ local noanim_button = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local deletespawn_button = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local nolegs_button = Instance.new("TextButton")
+local nolegsr6_button = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
+local nolegsr15_button = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
 
 --Properties:
 
@@ -297,26 +304,43 @@ deletespawn_button.TextWrapped = true
 UICorner_15.CornerRadius = UDim.new(0, 5)
 UICorner_15.Parent = deletespawn_button
 
-nolegs_button.Name = "nolegs_button"
-nolegs_button.Parent = MAIN
-nolegs_button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-nolegs_button.BackgroundTransparency = 0.600
-nolegs_button.Position = UDim2.new(0.0767759979, 0, 0.713668346, 0)
-nolegs_button.Size = UDim2.new(0, 108, 0, 41)
-nolegs_button.Font = Enum.Font.Oswald
-nolegs_button.Text = "DELETE LEGS"
-nolegs_button.TextColor3 = Color3.fromRGB(255, 128, 17)
-nolegs_button.TextScaled = true
-nolegs_button.TextSize = 14.000
-nolegs_button.TextStrokeTransparency = 0.000
-nolegs_button.TextWrapped = true
+nolegsr6_button.Name = "nolegsr6_button"
+nolegsr6_button.Parent = MAIN
+nolegsr6_button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+nolegsr6_button.BackgroundTransparency = 0.600
+nolegsr6_button.Position = UDim2.new(0.0767759979, 0, 0.713668346, 0)
+nolegsr6_button.Size = UDim2.new(0, 108, 0, 41)
+nolegsr6_button.Font = Enum.Font.Oswald
+nolegsr6_button.Text = "DELETE LEGS (R6)"
+nolegsr6_button.TextColor3 = Color3.fromRGB(255, 128, 17)
+nolegsr6_button.TextScaled = true
+nolegsr6_button.TextSize = 14.000
+nolegsr6_button.TextStrokeTransparency = 0.000
+nolegsr6_button.TextWrapped = true
 
 UICorner_16.CornerRadius = UDim.new(0, 5)
-UICorner_16.Parent = nolegs_button
+UICorner_16.Parent = nolegsr6_button
+
+nolegsr15_button.Name = "nolegsr15_button"
+nolegsr15_button.Parent = MAIN
+nolegsr15_button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+nolegsr15_button.BackgroundTransparency = 0.600
+nolegsr15_button.Position = UDim2.new(0.575178564, 0, 0.713668346, 0)
+nolegsr15_button.Size = UDim2.new(0, 108, 0, 41)
+nolegsr15_button.Font = Enum.Font.Oswald
+nolegsr15_button.Text = "DELETE LEGS (R15)"
+nolegsr15_button.TextColor3 = Color3.fromRGB(255, 128, 17)
+nolegsr15_button.TextScaled = true
+nolegsr15_button.TextSize = 14.000
+nolegsr15_button.TextStrokeTransparency = 0.000
+nolegsr15_button.TextWrapped = true
+
+UICorner_17.CornerRadius = UDim.new(0, 5)
+UICorner_17.Parent = nolegsr15_button
 
 -- Scripts:
 
-local function OUKHTB_fake_script() -- kill_button.LocalScript 
+local function JRRFNZI_fake_script() -- kill_button.LocalScript 
 	local script = Instance.new('LocalScript', kill_button)
 
 	function kill()
@@ -330,8 +354,8 @@ local function OUKHTB_fake_script() -- kill_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.kill_button.MouseButton1Click:Connect(kill)
 end
-coroutine.wrap(OUKHTB_fake_script)()
-local function WDGD_fake_script() -- naked_button.LocalScript 
+coroutine.wrap(JRRFNZI_fake_script)()
+local function MPSELKS_fake_script() -- naked_button.LocalScript 
 	local script = Instance.new('LocalScript', naked_button)
 
 	function naked()
@@ -351,8 +375,8 @@ local function WDGD_fake_script() -- naked_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.naked_button.MouseButton1Click:Connect(naked)
 end
-coroutine.wrap(WDGD_fake_script)()
-local function AKLAH_fake_script() -- pause_button.LocalScript 
+coroutine.wrap(MPSELKS_fake_script)()
+local function PLEM_fake_script() -- pause_button.LocalScript 
 	local script = Instance.new('LocalScript', pause_button)
 
 	function pause()
@@ -366,8 +390,8 @@ local function AKLAH_fake_script() -- pause_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.pause_button.MouseButton1Click:Connect(pause)
 end
-coroutine.wrap(AKLAH_fake_script)()
-local function EYLGMVF_fake_script() -- kick_button.LocalScript 
+coroutine.wrap(PLEM_fake_script)()
+local function DLVSB_fake_script() -- kick_button.LocalScript 
 	local script = Instance.new('LocalScript', kick_button)
 
 	function kick()
@@ -380,8 +404,8 @@ local function EYLGMVF_fake_script() -- kick_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.kick_button.MouseButton1Click:Connect(kick)
 end
-coroutine.wrap(EYLGMVF_fake_script)()
-local function EABQVWG_fake_script() -- deletetool_button.LocalScript 
+coroutine.wrap(DLVSB_fake_script)()
+local function TJJMW_fake_script() -- deletetool_button.LocalScript 
 	local script = Instance.new('LocalScript', deletetool_button)
 
 	function deletetool()
@@ -401,8 +425,8 @@ local function EABQVWG_fake_script() -- deletetool_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.deletetool_button.MouseButton1Click:Connect(deletetool)
 end
-coroutine.wrap(EABQVWG_fake_script)()
-local function FCLMAH_fake_script() -- deletemap_button.LocalScript 
+coroutine.wrap(TJJMW_fake_script)()
+local function MUOXV_fake_script() -- deletemap_button.LocalScript 
 	local script = Instance.new('LocalScript', deletemap_button)
 
 	function deletemap()
@@ -413,8 +437,8 @@ local function FCLMAH_fake_script() -- deletemap_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.deletemap_button.MouseButton1Click:Connect(deletemap)
 end
-coroutine.wrap(FCLMAH_fake_script)()
-local function QAUSKTB_fake_script() -- kickall_button.LocalScript 
+coroutine.wrap(MUOXV_fake_script)()
+local function NHWC_fake_script() -- kickall_button.LocalScript 
 	local script = Instance.new('LocalScript', kickall_button)
 
 	function kickall()
@@ -429,8 +453,8 @@ local function QAUSKTB_fake_script() -- kickall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.kickall_button.MouseButton1Click:Connect(kickall)
 end
-coroutine.wrap(QAUSKTB_fake_script)()
-local function TFJB_fake_script() -- killall_button.LocalScript 
+coroutine.wrap(NHWC_fake_script)()
+local function BYRC_fake_script() -- killall_button.LocalScript 
 	local script = Instance.new('LocalScript', killall_button)
 
 	function killall()
@@ -446,8 +470,8 @@ local function TFJB_fake_script() -- killall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.killall_button.MouseButton1Click:Connect(killall)
 end
-coroutine.wrap(TFJB_fake_script)()
-local function BMYY_fake_script() -- pauseall_button.LocalScript 
+coroutine.wrap(BYRC_fake_script)()
+local function KSRRBN_fake_script() -- pauseall_button.LocalScript 
 	local script = Instance.new('LocalScript', pauseall_button)
 
 	function pauseall()
@@ -462,8 +486,8 @@ local function BMYY_fake_script() -- pauseall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.pauseall_button.MouseButton1Click:Connect(pauseall)
 end
-coroutine.wrap(BMYY_fake_script)()
-local function IADLE_fake_script() -- nakedall_button.LocalScript 
+coroutine.wrap(KSRRBN_fake_script)()
+local function NGWDXPI_fake_script() -- nakedall_button.LocalScript 
 	local script = Instance.new('LocalScript', nakedall_button)
 
 	function nakedall()
@@ -484,8 +508,8 @@ local function IADLE_fake_script() -- nakedall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.nakedall_button.MouseButton1Click:Connect(nakedall)
 end
-coroutine.wrap(IADLE_fake_script)()
-local function XYNTNXQ_fake_script() -- MAIN.draggable 
+coroutine.wrap(NGWDXPI_fake_script)()
+local function HIMYI_fake_script() -- MAIN.draggable 
 	local script = Instance.new('LocalScript', MAIN)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -541,8 +565,8 @@ local function XYNTNXQ_fake_script() -- MAIN.draggable
 	task.wait(2.5)
 	credits()
 end
-coroutine.wrap(XYNTNXQ_fake_script)()
-local function NICA_fake_script() -- noanim_button.LocalScript 
+coroutine.wrap(HIMYI_fake_script)()
+local function JBXBGJA_fake_script() -- noanim_button.LocalScript 
 	local script = Instance.new('LocalScript', noanim_button)
 
 	function noanim()
@@ -556,8 +580,8 @@ local function NICA_fake_script() -- noanim_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.noanim_button.MouseButton1Click:Connect(noanim)
 end
-coroutine.wrap(NICA_fake_script)()
-local function YIVTTZ_fake_script() -- deletespawn_button.LocalScript 
+coroutine.wrap(JBXBGJA_fake_script)()
+local function UNYE_fake_script() -- deletespawn_button.LocalScript 
 	local script = Instance.new('LocalScript', deletespawn_button)
 
 	function deletespawn()
@@ -570,11 +594,11 @@ local function YIVTTZ_fake_script() -- deletespawn_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.deletespawn_button.MouseButton1Click:Connect(deletespawn)
 end
-coroutine.wrap(YIVTTZ_fake_script)()
-local function HUJJQDM_fake_script() -- nolegs_button.LocalScript 
-	local script = Instance.new('LocalScript', nolegs_button)
+coroutine.wrap(UNYE_fake_script)()
+local function UXKALGP_fake_script() -- nolegsr6_button.LocalScript 
+	local script = Instance.new('LocalScript', nolegsr6_button)
 
-	function nolegs()
+	function nolegsr6()
 		local plrs = game:GetService("Players")
 		local text = game.CoreGui.DESTROYER.MAIN.textbox.Text
 		local plrselected = plrs:FindFirstChild(text)
@@ -584,6 +608,22 @@ local function HUJJQDM_fake_script() -- nolegs_button.LocalScript
 		game:GetService("ReplicatedStorage").DeleteCar:FireServer(chr['Left Leg'])
 	end
 	
-	game.CoreGui.DESTROYER.MAIN.nolegs_button.MouseButton1Click:Connect(nolegs)
+	game.CoreGui.DESTROYER.MAIN.nolegsr6_button.MouseButton1Click:Connect(nolegsr6)
 end
-coroutine.wrap(HUJJQDM_fake_script)()
+coroutine.wrap(UXKALGP_fake_script)()
+local function LBUS_fake_script() -- nolegsr15_button.LocalScript 
+	local script = Instance.new('LocalScript', nolegsr15_button)
+
+	function nolegsr15()
+		local plrs = game:GetService("Players")
+		local text = game.CoreGui.DESTROYER.MAIN.textbox.Text
+		local plrselected = plrs:FindFirstChild(text)
+		local chr = plrselected.Character
+	
+		game:GetService("ReplicatedStorage").DeleteCar:FireServer(chr.RightUpperLeg)
+		game:GetService("ReplicatedStorage").DeleteCar:FireServer(chr.LeftUpperLeg)
+	end
+	
+	game.CoreGui.DESTROYER.MAIN.nolegsr15_button.MouseButton1Click:Connect(nolegsr15)
+end
+coroutine.wrap(LBUS_fake_script)()

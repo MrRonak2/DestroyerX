@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local DESTROYER = Instance.new("ScreenGui")
 local MAIN = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -33,8 +28,6 @@ local noanim_button = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local deletespawn_button = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
-
---Properties:
 
 DESTROYER.Name = "DESTROYER"
 DESTROYER.Parent = game.CoreGui
@@ -283,7 +276,7 @@ UICorner_14.Parent = deletespawn_button
 
 -- Scripts:
 
-local function RRJRPQ_fake_script() -- kill_button.LocalScript 
+local function BGHNYM_fake_script() -- kill_button.LocalScript 
 	local script = Instance.new('LocalScript', kill_button)
 
 	function kill()
@@ -297,8 +290,8 @@ local function RRJRPQ_fake_script() -- kill_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.kill_button.MouseButton1Click:Connect(kill)
 end
-coroutine.wrap(RRJRPQ_fake_script)()
-local function RCCH_fake_script() -- naked_button.LocalScript 
+coroutine.wrap(BGHNYM_fake_script)()
+local function URCIR_fake_script() -- naked_button.LocalScript 
 	local script = Instance.new('LocalScript', naked_button)
 
 	function naked()
@@ -318,8 +311,8 @@ local function RCCH_fake_script() -- naked_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.naked_button.MouseButton1Click:Connect(naked)
 end
-coroutine.wrap(RCCH_fake_script)()
-local function XAIYTFM_fake_script() -- pause_button.LocalScript 
+coroutine.wrap(URCIR_fake_script)()
+local function YWDKN_fake_script() -- pause_button.LocalScript 
 	local script = Instance.new('LocalScript', pause_button)
 
 	function pause()
@@ -333,8 +326,8 @@ local function XAIYTFM_fake_script() -- pause_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.pause_button.MouseButton1Click:Connect(pause)
 end
-coroutine.wrap(XAIYTFM_fake_script)()
-local function KZQMX_fake_script() -- kick_button.LocalScript 
+coroutine.wrap(YWDKN_fake_script)()
+local function NDIHPPN_fake_script() -- kick_button.LocalScript 
 	local script = Instance.new('LocalScript', kick_button)
 
 	function kick()
@@ -347,8 +340,8 @@ local function KZQMX_fake_script() -- kick_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.kick_button.MouseButton1Click:Connect(kick)
 end
-coroutine.wrap(KZQMX_fake_script)()
-local function XVHVICQ_fake_script() -- deletetool_button.LocalScript 
+coroutine.wrap(NDIHPPN_fake_script)()
+local function DNGUFKE_fake_script() -- deletetool_button.LocalScript 
 	local script = Instance.new('LocalScript', deletetool_button)
 
 	function deletetool()
@@ -368,8 +361,8 @@ local function XVHVICQ_fake_script() -- deletetool_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.deletetool_button.MouseButton1Click:Connect(deletetool)
 end
-coroutine.wrap(XVHVICQ_fake_script)()
-local function FBOX_fake_script() -- deletemap_button.LocalScript 
+coroutine.wrap(DNGUFKE_fake_script)()
+local function XPIIPVX_fake_script() -- deletemap_button.LocalScript 
 	local script = Instance.new('LocalScript', deletemap_button)
 
 	function deletemap()
@@ -380,8 +373,8 @@ local function FBOX_fake_script() -- deletemap_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.deletemap_button.MouseButton1Click:Connect(deletemap)
 end
-coroutine.wrap(FBOX_fake_script)()
-local function UWLSEE_fake_script() -- kickall_button.LocalScript 
+coroutine.wrap(XPIIPVX_fake_script)()
+local function JKLGTKM_fake_script() -- kickall_button.LocalScript 
 	local script = Instance.new('LocalScript', kickall_button)
 
 	function kickall()
@@ -396,8 +389,8 @@ local function UWLSEE_fake_script() -- kickall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.kickall_button.MouseButton1Click:Connect(kickall)
 end
-coroutine.wrap(UWLSEE_fake_script)()
-local function BFSKCQS_fake_script() -- killall_button.LocalScript 
+coroutine.wrap(JKLGTKM_fake_script)()
+local function LXOHT_fake_script() -- killall_button.LocalScript 
 	local script = Instance.new('LocalScript', killall_button)
 
 	function killall()
@@ -413,8 +406,8 @@ local function BFSKCQS_fake_script() -- killall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.killall_button.MouseButton1Click:Connect(killall)
 end
-coroutine.wrap(BFSKCQS_fake_script)()
-local function ZRZQBWW_fake_script() -- pauseall_button.LocalScript 
+coroutine.wrap(LXOHT_fake_script)()
+local function BSBUNJ_fake_script() -- pauseall_button.LocalScript 
 	local script = Instance.new('LocalScript', pauseall_button)
 
 	function pauseall()
@@ -429,8 +422,8 @@ local function ZRZQBWW_fake_script() -- pauseall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.pauseall_button.MouseButton1Click:Connect(pauseall)
 end
-coroutine.wrap(ZRZQBWW_fake_script)()
-local function SUJFBJ_fake_script() -- MAIN.draggable 
+coroutine.wrap(BSBUNJ_fake_script)()
+local function SMFICKD_fake_script() -- MAIN.draggable 
 	local script = Instance.new('LocalScript', MAIN)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -486,8 +479,8 @@ local function SUJFBJ_fake_script() -- MAIN.draggable
 	task.wait(2.5)
 	credits()
 end
-coroutine.wrap(SUJFBJ_fake_script)()
-local function KFJRPKT_fake_script() -- noanim_button.LocalScript 
+coroutine.wrap(SMFICKD_fake_script)()
+local function EJLK_fake_script() -- noanim_button.LocalScript 
 	local script = Instance.new('LocalScript', noanim_button)
 
 	function noanim()
@@ -501,12 +494,12 @@ local function KFJRPKT_fake_script() -- noanim_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.noanim_button.MouseButton1Click:Connect(noanim)
 end
-coroutine.wrap(KFJRPKT_fake_script)()
-local function XKRGJW_fake_script() -- deletespawn_button.LocalScript 
+coroutine.wrap(EJLK_fake_script)()
+local function TUZV_fake_script() -- deletespawn_button.LocalScript 
 	local script = Instance.new('LocalScript', deletespawn_button)
 
 	function deletespawn()
-		for _,v in pairs(game.Workspace:GetChildren()) do
+		for _,v in pairs(game.Workspace:GetDescendants()) do
 			if v:IsA("SpawnLocation") then
 				game:GetService("ReplicatedStorage").DeleteCar:FireServer(v)
 			end
@@ -515,4 +508,4 @@ local function XKRGJW_fake_script() -- deletespawn_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.deletespawn_button.MouseButton1Click:Connect(deletespawn)
 end
-coroutine.wrap(XKRGJW_fake_script)()
+coroutine.wrap(TUZV_fake_script)()

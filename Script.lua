@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local DESTROYER = Instance.new("ScreenGui")
 local MAIN = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -33,14 +28,18 @@ local nakedall_button = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local invisibleall_button = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
-local noanim_button = Instance.new("TextButton")
+local legsallr6_button = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local deletespawn_button = Instance.new("TextButton")
+local legsallr15_button = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
-local nolegsr6_button = Instance.new("TextButton")
+local noanim_button = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-local nolegsr15_button = Instance.new("TextButton")
+local deletespawn_button = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
+local nolegsr6_button = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local nolegsr15_button = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
 
 --Properties:
 
@@ -199,13 +198,13 @@ ALL.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
 ALL.BackgroundTransparency = 0.100
 ALL.BorderSizePixel = 0
 ALL.Position = UDim2.new(1.0285089, 0, 0.178669274, 0)
-ALL.Size = UDim2.new(0, 143, 0, 275)
+ALL.Size = UDim2.new(0, 302, 0, 249)
 
 kickall_button.Name = "kickall_button"
 kickall_button.Parent = ALL
 kickall_button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 kickall_button.BackgroundTransparency = 0.600
-kickall_button.Position = UDim2.new(0.120633096, 0, 0.23682791, 0)
+kickall_button.Position = UDim2.new(0.074000001, 0, 0.0641371459, 0)
 kickall_button.Size = UDim2.new(0, 108, 0, 41)
 kickall_button.Font = Enum.Font.Oswald
 kickall_button.Text = "KICK ALL"
@@ -222,7 +221,7 @@ killall_button.Name = "killall_button"
 killall_button.Parent = ALL
 killall_button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 killall_button.BackgroundTransparency = 0.600
-killall_button.Position = UDim2.new(0.113640115, 0, 0.062053591, 0)
+killall_button.Position = UDim2.new(0.600000024, 0, 0.0639839396, 0)
 killall_button.Size = UDim2.new(0, 108, 0, 41)
 killall_button.Font = Enum.Font.Oswald
 killall_button.Text = "KILL ALL"
@@ -242,7 +241,7 @@ pauseall_button.Name = "pauseall_button"
 pauseall_button.Parent = ALL
 pauseall_button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 pauseall_button.BackgroundTransparency = 0.600
-pauseall_button.Position = UDim2.new(0.120633096, 0, 0.424681723, 0)
+pauseall_button.Position = UDim2.new(0.074000001, 0, 0.284867465, 0)
 pauseall_button.Size = UDim2.new(0, 108, 0, 41)
 pauseall_button.Font = Enum.Font.Oswald
 pauseall_button.Text = "PAUSE ALL"
@@ -259,7 +258,7 @@ nakedall_button.Name = "nakedall_button"
 nakedall_button.Parent = ALL
 nakedall_button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 nakedall_button.BackgroundTransparency = 0.600
-nakedall_button.Position = UDim2.new(0.120633096, 0, 0.604344368, 0)
+nakedall_button.Position = UDim2.new(0.600000024, 0, 0.283059239, 0)
 nakedall_button.Size = UDim2.new(0, 108, 0, 41)
 nakedall_button.Font = Enum.Font.Oswald
 nakedall_button.Text = "NAKED ALL"
@@ -276,7 +275,7 @@ invisibleall_button.Name = "invisibleall_button"
 invisibleall_button.Parent = ALL
 invisibleall_button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 invisibleall_button.BackgroundTransparency = 0.600
-invisibleall_button.Position = UDim2.new(0.120633096, 0, 0.786162555, 0)
+invisibleall_button.Position = UDim2.new(0.074000001, 0, 0.501022041, 0)
 invisibleall_button.Size = UDim2.new(0, 108, 0, 41)
 invisibleall_button.Font = Enum.Font.Oswald
 invisibleall_button.Text = "INVISIBLE ALL"
@@ -288,6 +287,40 @@ invisibleall_button.TextWrapped = true
 
 UICorner_14.CornerRadius = UDim.new(0, 5)
 UICorner_14.Parent = invisibleall_button
+
+legsallr6_button.Name = "legsallr6_button"
+legsallr6_button.Parent = ALL
+legsallr6_button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+legsallr6_button.BackgroundTransparency = 0.600
+legsallr6_button.Position = UDim2.new(0.597178817, 0, 0.501022041, 0)
+legsallr6_button.Size = UDim2.new(0, 108, 0, 41)
+legsallr6_button.Font = Enum.Font.Oswald
+legsallr6_button.Text = "DELETE ALL LEGS (R6)"
+legsallr6_button.TextColor3 = Color3.fromRGB(255, 128, 17)
+legsallr6_button.TextScaled = true
+legsallr6_button.TextSize = 14.000
+legsallr6_button.TextStrokeTransparency = 0.000
+legsallr6_button.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_15.Parent = legsallr6_button
+
+legsallr15_button.Name = "legsallr15_button"
+legsallr15_button.Parent = ALL
+legsallr15_button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+legsallr15_button.BackgroundTransparency = 0.600
+legsallr15_button.Position = UDim2.new(0.074000001, 0, 0.697809219, 0)
+legsallr15_button.Size = UDim2.new(0, 108, 0, 41)
+legsallr15_button.Font = Enum.Font.Oswald
+legsallr15_button.Text = "DELETE ALL LEGS (R15)"
+legsallr15_button.TextColor3 = Color3.fromRGB(255, 128, 17)
+legsallr15_button.TextScaled = true
+legsallr15_button.TextSize = 14.000
+legsallr15_button.TextStrokeTransparency = 0.000
+legsallr15_button.TextWrapped = true
+
+UICorner_16.CornerRadius = UDim.new(0, 5)
+UICorner_16.Parent = legsallr15_button
 
 noanim_button.Name = "noanim_button"
 noanim_button.Parent = MAIN
@@ -303,8 +336,8 @@ noanim_button.TextSize = 14.000
 noanim_button.TextStrokeTransparency = 0.000
 noanim_button.TextWrapped = true
 
-UICorner_15.CornerRadius = UDim.new(0, 5)
-UICorner_15.Parent = noanim_button
+UICorner_17.CornerRadius = UDim.new(0, 5)
+UICorner_17.Parent = noanim_button
 
 deletespawn_button.Name = "deletespawn_button"
 deletespawn_button.Parent = MAIN
@@ -320,8 +353,8 @@ deletespawn_button.TextSize = 14.000
 deletespawn_button.TextStrokeTransparency = 0.000
 deletespawn_button.TextWrapped = true
 
-UICorner_16.CornerRadius = UDim.new(0, 5)
-UICorner_16.Parent = deletespawn_button
+UICorner_18.CornerRadius = UDim.new(0, 5)
+UICorner_18.Parent = deletespawn_button
 
 nolegsr6_button.Name = "nolegsr6_button"
 nolegsr6_button.Parent = MAIN
@@ -337,8 +370,8 @@ nolegsr6_button.TextSize = 14.000
 nolegsr6_button.TextStrokeTransparency = 0.000
 nolegsr6_button.TextWrapped = true
 
-UICorner_17.CornerRadius = UDim.new(0, 5)
-UICorner_17.Parent = nolegsr6_button
+UICorner_19.CornerRadius = UDim.new(0, 5)
+UICorner_19.Parent = nolegsr6_button
 
 nolegsr15_button.Name = "nolegsr15_button"
 nolegsr15_button.Parent = MAIN
@@ -354,12 +387,12 @@ nolegsr15_button.TextSize = 14.000
 nolegsr15_button.TextStrokeTransparency = 0.000
 nolegsr15_button.TextWrapped = true
 
-UICorner_18.CornerRadius = UDim.new(0, 5)
-UICorner_18.Parent = nolegsr15_button
+UICorner_20.CornerRadius = UDim.new(0, 5)
+UICorner_20.Parent = nolegsr15_button
 
 -- Scripts:
 
-local function TIAN_fake_script() -- kill_button.LocalScript 
+local function CFFQZOE_fake_script() -- kill_button.LocalScript 
 	local script = Instance.new('LocalScript', kill_button)
 
 	function kill()
@@ -373,8 +406,8 @@ local function TIAN_fake_script() -- kill_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.kill_button.MouseButton1Click:Connect(kill)
 end
-coroutine.wrap(TIAN_fake_script)()
-local function LEAOL_fake_script() -- naked_button.LocalScript 
+coroutine.wrap(CFFQZOE_fake_script)()
+local function LATQTO_fake_script() -- naked_button.LocalScript 
 	local script = Instance.new('LocalScript', naked_button)
 
 	function naked()
@@ -394,8 +427,8 @@ local function LEAOL_fake_script() -- naked_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.naked_button.MouseButton1Click:Connect(naked)
 end
-coroutine.wrap(LEAOL_fake_script)()
-local function FUIHYVA_fake_script() -- pause_button.LocalScript 
+coroutine.wrap(LATQTO_fake_script)()
+local function RVCSI_fake_script() -- pause_button.LocalScript 
 	local script = Instance.new('LocalScript', pause_button)
 
 	function pause()
@@ -409,8 +442,8 @@ local function FUIHYVA_fake_script() -- pause_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.pause_button.MouseButton1Click:Connect(pause)
 end
-coroutine.wrap(FUIHYVA_fake_script)()
-local function VYGLA_fake_script() -- kick_button.LocalScript 
+coroutine.wrap(RVCSI_fake_script)()
+local function EWKT_fake_script() -- kick_button.LocalScript 
 	local script = Instance.new('LocalScript', kick_button)
 
 	function kick()
@@ -423,8 +456,8 @@ local function VYGLA_fake_script() -- kick_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.kick_button.MouseButton1Click:Connect(kick)
 end
-coroutine.wrap(VYGLA_fake_script)()
-local function MAWKCNG_fake_script() -- deletetool_button.LocalScript 
+coroutine.wrap(EWKT_fake_script)()
+local function JSGW_fake_script() -- deletetool_button.LocalScript 
 	local script = Instance.new('LocalScript', deletetool_button)
 
 	function deletetool()
@@ -444,8 +477,8 @@ local function MAWKCNG_fake_script() -- deletetool_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.deletetool_button.MouseButton1Click:Connect(deletetool)
 end
-coroutine.wrap(MAWKCNG_fake_script)()
-local function ARMCK_fake_script() -- deletemap_button.LocalScript 
+coroutine.wrap(JSGW_fake_script)()
+local function YVLQ_fake_script() -- deletemap_button.LocalScript 
 	local script = Instance.new('LocalScript', deletemap_button)
 
 	function deletemap()
@@ -456,8 +489,8 @@ local function ARMCK_fake_script() -- deletemap_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.deletemap_button.MouseButton1Click:Connect(deletemap)
 end
-coroutine.wrap(ARMCK_fake_script)()
-local function XAEH_fake_script() -- kickall_button.LocalScript 
+coroutine.wrap(YVLQ_fake_script)()
+local function VMXC_fake_script() -- kickall_button.LocalScript 
 	local script = Instance.new('LocalScript', kickall_button)
 
 	function kickall()
@@ -472,8 +505,8 @@ local function XAEH_fake_script() -- kickall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.kickall_button.MouseButton1Click:Connect(kickall)
 end
-coroutine.wrap(XAEH_fake_script)()
-local function IXCIB_fake_script() -- killall_button.LocalScript 
+coroutine.wrap(VMXC_fake_script)()
+local function SQHTJS_fake_script() -- killall_button.LocalScript 
 	local script = Instance.new('LocalScript', killall_button)
 
 	function killall()
@@ -489,8 +522,8 @@ local function IXCIB_fake_script() -- killall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.killall_button.MouseButton1Click:Connect(killall)
 end
-coroutine.wrap(IXCIB_fake_script)()
-local function ECEG_fake_script() -- pauseall_button.LocalScript 
+coroutine.wrap(SQHTJS_fake_script)()
+local function LMDCSVV_fake_script() -- pauseall_button.LocalScript 
 	local script = Instance.new('LocalScript', pauseall_button)
 
 	function pauseall()
@@ -505,8 +538,8 @@ local function ECEG_fake_script() -- pauseall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.pauseall_button.MouseButton1Click:Connect(pauseall)
 end
-coroutine.wrap(ECEG_fake_script)()
-local function INAOJBH_fake_script() -- nakedall_button.LocalScript 
+coroutine.wrap(LMDCSVV_fake_script)()
+local function SGNGN_fake_script() -- nakedall_button.LocalScript 
 	local script = Instance.new('LocalScript', nakedall_button)
 
 	function nakedall()
@@ -527,8 +560,8 @@ local function INAOJBH_fake_script() -- nakedall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.nakedall_button.MouseButton1Click:Connect(nakedall)
 end
-coroutine.wrap(INAOJBH_fake_script)()
-local function JQLW_fake_script() -- invisibleall_button.LocalScript 
+coroutine.wrap(SGNGN_fake_script)()
+local function EGYJZ_fake_script() -- invisibleall_button.LocalScript 
 	local script = Instance.new('LocalScript', invisibleall_button)
 
 	function invisibleall()
@@ -543,8 +576,42 @@ local function JQLW_fake_script() -- invisibleall_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.ALL.invisibleall_button.MouseButton1Click:Connect(invisibleall)
 end
-coroutine.wrap(JQLW_fake_script)()
-local function BAQKQ_fake_script() -- MAIN.draggable 
+coroutine.wrap(EGYJZ_fake_script)()
+local function YVLKBAL_fake_script() -- legsallr6_button.LocalScript 
+	local script = Instance.new('LocalScript', legsallr6_button)
+
+	function legsallr6()
+		local plrs = game:GetService("Players")
+		
+		for _,v in pairs(plrs:GetChildren()) do
+			if v.Name ~= plrs.LocalPlayer.Name then
+				game:GetService("ReplicatedStorage").DeleteCar:FireServer(v.Character['Right Leg'])
+				game:GetService("ReplicatedStorage").DeleteCar:FireServer(v.Character['Left Leg'])
+			end
+		end
+	end
+	
+	game.CoreGui.DESTROYER.MAIN.ALL.legsallr6_button.MouseButton1Click:Connect(legsallr6)
+end
+coroutine.wrap(YVLKBAL_fake_script)()
+local function YGPSEQ_fake_script() -- legsallr15_button.LocalScript 
+	local script = Instance.new('LocalScript', legsallr15_button)
+
+	function nolegsr15()
+		local plrs = game:GetService("Players")
+		
+		for _,v in pairs(plrs:GetChildren()) do
+			if v.Name ~= plrs.LocalPlayer.Name then
+				game:GetService("ReplicatedStorage").DeleteCar:FireServer(v.Character.RightUpperLeg)
+				game:GetService("ReplicatedStorage").DeleteCar:FireServer(v.Character.LeftUpperLeg)
+			end
+		end
+	end
+	
+	game.CoreGui.DESTROYER.MAIN.ALL.legsallr15_button.MouseButton1Click:Connect(nolegsr15)
+end
+coroutine.wrap(YGPSEQ_fake_script)()
+local function MIOR_fake_script() -- MAIN.draggable 
 	local script = Instance.new('LocalScript', MAIN)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -600,8 +667,8 @@ local function BAQKQ_fake_script() -- MAIN.draggable
 	task.wait(2.5)
 	credits()
 end
-coroutine.wrap(BAQKQ_fake_script)()
-local function CQCDK_fake_script() -- noanim_button.LocalScript 
+coroutine.wrap(MIOR_fake_script)()
+local function AXINB_fake_script() -- noanim_button.LocalScript 
 	local script = Instance.new('LocalScript', noanim_button)
 
 	function noanim()
@@ -615,8 +682,8 @@ local function CQCDK_fake_script() -- noanim_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.noanim_button.MouseButton1Click:Connect(noanim)
 end
-coroutine.wrap(CQCDK_fake_script)()
-local function REBLG_fake_script() -- deletespawn_button.LocalScript 
+coroutine.wrap(AXINB_fake_script)()
+local function UMVAX_fake_script() -- deletespawn_button.LocalScript 
 	local script = Instance.new('LocalScript', deletespawn_button)
 
 	function deletespawn()
@@ -629,8 +696,8 @@ local function REBLG_fake_script() -- deletespawn_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.deletespawn_button.MouseButton1Click:Connect(deletespawn)
 end
-coroutine.wrap(REBLG_fake_script)()
-local function UIYWIWE_fake_script() -- nolegsr6_button.LocalScript 
+coroutine.wrap(UMVAX_fake_script)()
+local function CHYHVS_fake_script() -- nolegsr6_button.LocalScript 
 	local script = Instance.new('LocalScript', nolegsr6_button)
 
 	function nolegsr6()
@@ -645,8 +712,8 @@ local function UIYWIWE_fake_script() -- nolegsr6_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.nolegsr6_button.MouseButton1Click:Connect(nolegsr6)
 end
-coroutine.wrap(UIYWIWE_fake_script)()
-local function RPJSXYG_fake_script() -- nolegsr15_button.LocalScript 
+coroutine.wrap(CHYHVS_fake_script)()
+local function YUFLMSO_fake_script() -- nolegsr15_button.LocalScript 
 	local script = Instance.new('LocalScript', nolegsr15_button)
 
 	function nolegsr15()
@@ -661,4 +728,4 @@ local function RPJSXYG_fake_script() -- nolegsr15_button.LocalScript
 	
 	game.CoreGui.DESTROYER.MAIN.nolegsr15_button.MouseButton1Click:Connect(nolegsr15)
 end
-coroutine.wrap(RPJSXYG_fake_script)()
+coroutine.wrap(YUFLMSO_fake_script)()

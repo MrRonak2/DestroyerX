@@ -1,4 +1,3 @@
-
 local destroyerxv2 = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -59,6 +58,8 @@ local world = Instance.new("ImageButton")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 local textbox = Instance.new("TextBox")
 local UICorner_26 = Instance.new("UICorner")
+
+--Properties:
 
 destroyerxv2.Name = "destroyerxv2"
 destroyerxv2.Parent = game.CoreGui
@@ -564,7 +565,7 @@ UICorner_26.Parent = textbox
 
 -- Scripts:
 
-local function IYMUV_fake_script() -- kill.kill_script 
+local function OAZP_fake_script() -- kill.kill_script 
 	local script = Instance.new('LocalScript', kill)
 
 	function kill()
@@ -578,8 +579,8 @@ local function IYMUV_fake_script() -- kill.kill_script
 	
 	script.Parent.MouseButton1Click:Connect(kill)
 end
-coroutine.wrap(IYMUV_fake_script)()
-local function BTOKN_fake_script() -- kick.kick_script 
+coroutine.wrap(OAZP_fake_script)()
+local function ULSAQO_fake_script() -- kick.kick_script 
 	local script = Instance.new('LocalScript', kick)
 
 	function kick()
@@ -593,8 +594,8 @@ local function BTOKN_fake_script() -- kick.kick_script
 	
 	script.Parent.MouseButton1Click:Connect(kick)
 end
-coroutine.wrap(BTOKN_fake_script)()
-local function WQMQEYN_fake_script() -- pause.pause_script 
+coroutine.wrap(ULSAQO_fake_script)()
+local function NUSD_fake_script() -- pause.pause_script 
 	local script = Instance.new('LocalScript', pause)
 
 	function pause()
@@ -608,8 +609,8 @@ local function WQMQEYN_fake_script() -- pause.pause_script
 	
 	script.Parent.MouseButton1Click:Connect(pause)
 end
-coroutine.wrap(WQMQEYN_fake_script)()
-local function AEOHW_fake_script() -- naked.naked_script 
+coroutine.wrap(NUSD_fake_script)()
+local function UFWZPDY_fake_script() -- naked.naked_script 
 	local script = Instance.new('LocalScript', naked)
 
 	function naked()
@@ -617,20 +618,21 @@ local function AEOHW_fake_script() -- naked.naked_script
 		local text = script.Parent.Parent.textbox.Text
 		local plrselected = plrs:FindFirstChild(text)
 		local chr = plrselected.Character
-	
-		game:GetService("ReplicatedStorage").DeleteCar:FireServer(chr.Shirt)
-		game:GetService("ReplicatedStorage").DeleteCar:FireServer(chr.Pants)
+		
 		for _,a in pairs(chr:GetChildren()) do
 			if a:IsA("Accessory") then
 				game:GetService("ReplicatedStorage").DeleteCar:FireServer(a)
 			end
 		end
+		
+		game:GetService("ReplicatedStorage").DeleteCar:FireServer(chr.Pants)
+		game:GetService("ReplicatedStorage").DeleteCar:FireServer(chr.Shirt)
 	end
 	
 	script.Parent.MouseButton1Click:Connect(naked)
 end
-coroutine.wrap(AEOHW_fake_script)()
-local function GMGB_fake_script() -- killall.killall_script 
+coroutine.wrap(UFWZPDY_fake_script)()
+local function RJPOQVC_fake_script() -- killall.killall_script 
 	local script = Instance.new('LocalScript', killall)
 
 	function kill_all()
@@ -646,8 +648,8 @@ local function GMGB_fake_script() -- killall.killall_script
 	
 	script.Parent.MouseButton1Click:Connect(kill_all)
 end
-coroutine.wrap(GMGB_fake_script)()
-local function VWYPO_fake_script() -- pauseall.pauseall_scritp 
+coroutine.wrap(RJPOQVC_fake_script)()
+local function FOKZ_fake_script() -- pauseall.pauseall_scritp 
 	local script = Instance.new('LocalScript', pauseall)
 
 	function pauseall()
@@ -662,8 +664,8 @@ local function VWYPO_fake_script() -- pauseall.pauseall_scritp
 	
 	script.Parent.MouseButton1Click:Connect(pauseall)
 end
-coroutine.wrap(VWYPO_fake_script)()
-local function SKDWQQK_fake_script() -- nolegsallr6.nolegsallr6_script 
+coroutine.wrap(FOKZ_fake_script)()
+local function ESTJ_fake_script() -- nolegsallr6.nolegsallr6_script 
 	local script = Instance.new('LocalScript', nolegsallr6)
 
 	function nolegsallr6()
@@ -679,8 +681,8 @@ local function SKDWQQK_fake_script() -- nolegsallr6.nolegsallr6_script
 	
 	script.Parent.MouseButton1Click:Connect(nolegsallr6)
 end
-coroutine.wrap(SKDWQQK_fake_script)()
-local function YCQEQYC_fake_script() -- nolegsallr15.nolegsallr15 
+coroutine.wrap(ESTJ_fake_script)()
+local function GLXN_fake_script() -- nolegsallr15.nolegsallr15 
 	local script = Instance.new('LocalScript', nolegsallr15)
 
 	function nolegsallr15()
@@ -696,8 +698,8 @@ local function YCQEQYC_fake_script() -- nolegsallr15.nolegsallr15
 	
 	script.Parent.MouseButton1Click:Connect(nolegsallr15)
 end
-coroutine.wrap(YCQEQYC_fake_script)()
-local function XHNC_fake_script() -- invisibleall.invisibleall_script 
+coroutine.wrap(GLXN_fake_script)()
+local function RGIC_fake_script() -- invisibleall.invisibleall_script 
 	local script = Instance.new('LocalScript', invisibleall)
 
 	function invisibleall()
@@ -712,8 +714,8 @@ local function XHNC_fake_script() -- invisibleall.invisibleall_script
 	
 	script.Parent.MouseButton1Click:Connect(invisibleall)
 end
-coroutine.wrap(XHNC_fake_script)()
-local function CJWBFC_fake_script() -- deletealltools.deletealltools_script 
+coroutine.wrap(RGIC_fake_script)()
+local function XZCTB_fake_script() -- deletealltools.deletealltools_script 
 	local script = Instance.new('LocalScript', deletealltools)
 
 	function deletetools()
@@ -741,8 +743,8 @@ local function CJWBFC_fake_script() -- deletealltools.deletealltools_script
 	
 	script.Parent.MouseButton1Click:Connect(deletetools)
 end
-coroutine.wrap(CJWBFC_fake_script)()
-local function VBHLLA_fake_script() -- nakedall.nakedall_script 
+coroutine.wrap(XZCTB_fake_script)()
+local function GLSJZN_fake_script() -- nakedall.nakedall_script 
 	local script = Instance.new('LocalScript', nakedall)
 
 	function nakedall()
@@ -750,21 +752,21 @@ local function VBHLLA_fake_script() -- nakedall.nakedall_script
 	
 		for _,v in pairs(plrs:GetChildren()) do
 			if v.Name ~= plrs.LocalPlayer.Name then
-				game:GetService("ReplicatedStorage").DeleteCar:FireServer(v.Character.Shirt)
-				game:GetService("ReplicatedStorage").DeleteCar:FireServer(v.Character.Pants)
 				for _,a in pairs(v.Character:GetChildren()) do
 					if a:IsA("Accessory") then
 						game:GetService("ReplicatedStorage").DeleteCar:FireServer(a)
 					end
 				end
+				game:GetService("ReplicatedStorage").DeleteCar:FireServer(v.Character.Pants)
+				game:GetService("ReplicatedStorage").DeleteCar:FireServer(v.Character.Shirt)
 			end
 		end
 	end
 	
 	script.Parent.MouseButton1Click:Connect(nakedall)
 end
-coroutine.wrap(VBHLLA_fake_script)()
-local function ODPLMCW_fake_script() -- kickall.kickall_script 
+coroutine.wrap(GLSJZN_fake_script)()
+local function LMCUGA_fake_script() -- kickall.kickall_script 
 	local script = Instance.new('LocalScript', kickall)
 
 	function kick_all()
@@ -779,8 +781,8 @@ local function ODPLMCW_fake_script() -- kickall.kickall_script
 	
 	script.Parent.MouseButton1Click:Connect(kick_all)
 end
-coroutine.wrap(ODPLMCW_fake_script)()
-local function UTWMOYM_fake_script() -- allframe.Daggable_script 
+coroutine.wrap(LMCUGA_fake_script)()
+local function VKPL_fake_script() -- allframe.Daggable_script 
 	local script = Instance.new('LocalScript', allframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -823,8 +825,8 @@ local function UTWMOYM_fake_script() -- allframe.Daggable_script
 		end
 	end)
 end
-coroutine.wrap(UTWMOYM_fake_script)()
-local function TIHH_fake_script() -- nolegsr6.r6_script 
+coroutine.wrap(VKPL_fake_script)()
+local function FACZHLA_fake_script() -- nolegsr6.r6_script 
 	local script = Instance.new('LocalScript', nolegsr6)
 
 	function r6()
@@ -839,8 +841,8 @@ local function TIHH_fake_script() -- nolegsr6.r6_script
 	
 	script.Parent.MouseButton1Click:Connect(r6)
 end
-coroutine.wrap(TIHH_fake_script)()
-local function CNZZMOJ_fake_script() -- nolegsr15.r15_script 
+coroutine.wrap(FACZHLA_fake_script)()
+local function ZQJM_fake_script() -- nolegsr15.r15_script 
 	local script = Instance.new('LocalScript', nolegsr15)
 
 	function r15()
@@ -869,8 +871,8 @@ local function CNZZMOJ_fake_script() -- nolegsr15.r15_script
 	task.wait(1.5)
 	a()
 end
-coroutine.wrap(CNZZMOJ_fake_script)()
-local function HUHO_fake_script() -- invisible.invisible_script 
+coroutine.wrap(ZQJM_fake_script)()
+local function VIPNZ_fake_script() -- invisible.invisible_script 
 	local script = Instance.new('LocalScript', invisible)
 
 	function invisible()
@@ -884,8 +886,8 @@ local function HUHO_fake_script() -- invisible.invisible_script
 	
 	script.Parent.MouseButton1Click:Connect(invisible)
 end
-coroutine.wrap(HUHO_fake_script)()
-local function RKJHH_fake_script() -- Main.Daggable_script 
+coroutine.wrap(VIPNZ_fake_script)()
+local function DWVPC_fake_script() -- Main.Daggable_script 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -928,8 +930,8 @@ local function RKJHH_fake_script() -- Main.Daggable_script
 		end
 	end)
 end
-coroutine.wrap(RKJHH_fake_script)()
-local function CXAO_fake_script() -- deleteplayertools.deleteplayertools_script 
+coroutine.wrap(DWVPC_fake_script)()
+local function PFBX_fake_script() -- deleteplayertools.deleteplayertools_script 
 	local script = Instance.new('LocalScript', deleteplayertools)
 
 	function deleteplayertools()
@@ -954,8 +956,8 @@ local function CXAO_fake_script() -- deleteplayertools.deleteplayertools_script
 	
 	script.Parent.MouseButton1Click:Connect(deleteplayertools)
 end
-coroutine.wrap(CXAO_fake_script)()
-local function VVFFBIB_fake_script() -- shutdown.shutdown_script 
+coroutine.wrap(PFBX_fake_script)()
+local function AJKJR_fake_script() -- shutdown.shutdown_script 
 	local script = Instance.new('LocalScript', shutdown)
 
 	function shutdown()
@@ -971,8 +973,8 @@ local function VVFFBIB_fake_script() -- shutdown.shutdown_script
 	
 	script.Parent.MouseButton1Click:Connect(shutdown)
 end
-coroutine.wrap(VVFFBIB_fake_script)()
-local function XBGHSP_fake_script() -- deleteworld.deleteworld_script 
+coroutine.wrap(AJKJR_fake_script)()
+local function TBQTIVP_fake_script() -- deleteworld.deleteworld_script 
 	local script = Instance.new('LocalScript', deleteworld)
 
 	function deletewolrd()
@@ -983,8 +985,8 @@ local function XBGHSP_fake_script() -- deleteworld.deleteworld_script
 	
 	script.Parent.MouseButton1Click:Connect(deletewolrd)
 end
-coroutine.wrap(XBGHSP_fake_script)()
-local function TPEUS_fake_script() -- getdeletetool.getdeletetool_script 
+coroutine.wrap(TBQTIVP_fake_script)()
+local function KXBYSMW_fake_script() -- getdeletetool.getdeletetool_script 
 	local script = Instance.new('LocalScript', getdeletetool)
 
 	function getdeletetool()
@@ -1004,8 +1006,8 @@ local function TPEUS_fake_script() -- getdeletetool.getdeletetool_script
 	
 	script.Parent.MouseButton1Click:Connect(getdeletetool)
 end
-coroutine.wrap(TPEUS_fake_script)()
-local function DDWTSMF_fake_script() -- deletespawn.deleteworld_script 
+coroutine.wrap(KXBYSMW_fake_script)()
+local function LGKELGB_fake_script() -- deletespawn.deleteworld_script 
 	local script = Instance.new('LocalScript', deletespawn)
 
 	function deletespawn()
@@ -1018,8 +1020,8 @@ local function DDWTSMF_fake_script() -- deletespawn.deleteworld_script
 	
 	script.Parent.MouseButton1Click:Connect(deletespawn)
 end
-coroutine.wrap(DDWTSMF_fake_script)()
-local function GEISSO_fake_script() -- deletedecals.deletedecals_script 
+coroutine.wrap(LGKELGB_fake_script)()
+local function AUKYDJM_fake_script() -- deletedecals.deletedecals_script 
 	local script = Instance.new('LocalScript', deletedecals)
 
 	function deletedecals()
@@ -1034,8 +1036,8 @@ local function GEISSO_fake_script() -- deletedecals.deletedecals_script
 	
 	script.Parent.MouseButton1Click:Connect(deletedecals)
 end
-coroutine.wrap(GEISSO_fake_script)()
-local function CEBPD_fake_script() -- deleteremote.deleteremote_script 
+coroutine.wrap(AUKYDJM_fake_script)()
+local function LVUCUZJ_fake_script() -- deleteremote.deleteremote_script 
 	local script = Instance.new('LocalScript', deleteremote)
 
 	function deletederemote()
@@ -1050,8 +1052,8 @@ local function CEBPD_fake_script() -- deleteremote.deleteremote_script
 	
 	script.Parent.MouseButton1Click:Connect(deletederemote)
 end
-coroutine.wrap(CEBPD_fake_script)()
-local function EDVG_fake_script() -- worldframe.Daggable_script 
+coroutine.wrap(LVUCUZJ_fake_script)()
+local function PPPYOQG_fake_script() -- worldframe.Daggable_script 
 	local script = Instance.new('LocalScript', worldframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1094,8 +1096,8 @@ local function EDVG_fake_script() -- worldframe.Daggable_script
 		end
 	end)
 end
-coroutine.wrap(EDVG_fake_script)()
-local function JPWFENV_fake_script() -- players.players_script 
+coroutine.wrap(PPPYOQG_fake_script)()
+local function GRVFO_fake_script() -- players.players_script 
 	local script = Instance.new('LocalScript', players)
 
 	function playergui()
@@ -1104,8 +1106,8 @@ local function JPWFENV_fake_script() -- players.players_script
 	
 	script.Parent.MouseButton1Click:Connect(playergui)
 end
-coroutine.wrap(JPWFENV_fake_script)()
-local function DURD_fake_script() -- world.world_script 
+coroutine.wrap(GRVFO_fake_script)()
+local function PBPQE_fake_script() -- world.world_script 
 	local script = Instance.new('LocalScript', world)
 
 	function world_gui()
@@ -1114,8 +1116,8 @@ local function DURD_fake_script() -- world.world_script
 	
 	script.Parent.MouseButton1Click:Connect(world_gui)
 end
-coroutine.wrap(DURD_fake_script)()
-local function OIMBO_fake_script() -- Main.LocalScript 
+coroutine.wrap(PBPQE_fake_script)()
+local function IJNND_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	function coca()
@@ -1124,4 +1126,4 @@ local function OIMBO_fake_script() -- Main.LocalScript
 	
 	task.wait(500)
 end
-coroutine.wrap(OIMBO_fake_script)()
+coroutine.wrap(IJNND_fake_script)()

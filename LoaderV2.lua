@@ -5,7 +5,7 @@ local title = Instance.new("TextLabel")
 local check = Instance.new("TextLabel")
 
 loader.Name = "loader"
-loader.Parent = game.CoreGui
+loader.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 main.Name = "main"
 main.Parent = loader
@@ -46,7 +46,7 @@ check.TextSize = 14.000
 check.TextStrokeTransparency = 0.000
 check.TextWrapped = true
 
-local function ECIQA_fake_script() -- check.check_script 
+local function KFHMS_fake_script() -- check.check_script 
 	local script = Instance.new('LocalScript', check)
 
 	function exploitable()
@@ -83,15 +83,15 @@ local function ECIQA_fake_script() -- check.check_script
 	exploitable()
 	
 	if script.Parent.Text == "Exploitable" then
-		script.Parent.Text = "Wait 1 Second"
+		script.Parent.Text = "Remote Event Found"
 		wait(1)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrRonak2/DestroyerX/main/ScriptV2.lua",true))()
 		script.Parent.Parent.Parent:Destroy()
 	else
 		script.Parent.Text = "Remote Event Not Found"
-		wait(0.7)
+		wait(1)
 		script.Parent.Parent.Parent:Destroy()
 	end
 	
 end
-coroutine.wrap(ECIQA_fake_script)()
+coroutine.wrap(KFHMS_fake_script)()

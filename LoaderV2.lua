@@ -11,7 +11,7 @@ main.Name = "main"
 main.Parent = loader
 main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 main.BorderSizePixel = 0
-main.Position = UDim2.new(0.412284315, 0, 0.391826928, 0)
+main.Position = UDim2.new(0.412295729, 0, 0.391800225, 0)
 main.Size = UDim2.new(0, 335, 0, 180)
 
 UICorner.Parent = main
@@ -46,12 +46,12 @@ check.TextSize = 14.000
 check.TextStrokeTransparency = 0.000
 check.TextWrapped = true
 
-local function TYWOBG_fake_script() -- check.check_script 
+local function ECIQA_fake_script() -- check.check_script 
 	local script = Instance.new('LocalScript', check)
 
 	function exploitable()
 		local replicated = game.ReplicatedStorage
-
+	
 		for _,v in pairs(replicated:GetChildren()) do
 			if v:IsA("RemoteEvent") then
 				if v.Name == "DeleteCar" then
@@ -65,7 +65,7 @@ local function TYWOBG_fake_script() -- check.check_script
 			end
 		end
 	end
-
+	
 	wait(0.2)
 	function check()
 		script.Parent.Text= "Checking."
@@ -81,16 +81,17 @@ local function TYWOBG_fake_script() -- check.check_script
 	check()
 	wait(1)
 	exploitable()
-
+	
 	if script.Parent.Text == "Exploitable" then
-		script.Parent.Text = "Wait 1 second"
+		script.Parent.Text = "Wait 1 Second"
 		wait(1)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrRonak2/DestroyerX/main/ScriptV2.lua",true))()
 		script.Parent.Parent.Parent:Destroy()
-	else 
-		script.Parent.Text = "BYE!"
+	else
+		script.Parent.Text = "Remote Event Not Found"
 		wait(0.7)
 		script.Parent.Parent.Parent:Destroy()
 	end
+	
 end
-coroutine.wrap(TYWOBG_fake_script)()
+coroutine.wrap(ECIQA_fake_script)()

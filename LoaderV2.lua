@@ -1,11 +1,20 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local loader = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local title = Instance.new("TextLabel")
 local check = Instance.new("TextLabel")
+local Icon = Instance.new("ImageButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
 
 loader.Name = "loader"
-loader.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+loader.Parent = game.CoreGui
 
 main.Name = "main"
 main.Parent = loader
@@ -46,7 +55,20 @@ check.TextSize = 14.000
 check.TextStrokeTransparency = 0.000
 check.TextWrapped = true
 
-local function KFHMS_fake_script() -- check.check_script 
+Icon.Name = "Icon"
+Icon.Parent = main
+Icon.Active = false
+Icon.BackgroundTransparency = 1.000
+Icon.Position = UDim2.new(0.889552236, 0, 0, 0)
+Icon.Selectable = false
+Icon.Size = UDim2.new(0.110447764, 0, 0.266666681, 0)
+Icon.Image = "rbxassetid://7072725342"
+
+UIAspectRatioConstraint.Parent = Icon
+
+-- Scripts:
+
+local function LMMBX_fake_script() -- check.check_script 
 	local script = Instance.new('LocalScript', check)
 
 	function exploitable()
@@ -94,4 +116,15 @@ local function KFHMS_fake_script() -- check.check_script
 	end
 	
 end
-coroutine.wrap(KFHMS_fake_script)()
+coroutine.wrap(LMMBX_fake_script)()
+local function XUZNRIM_fake_script() -- Icon.LocalScript 
+	local script = Instance.new('LocalScript', Icon)
+
+	local loader = game.Parent.Parent
+	function exit()
+		loader:Destroy()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(exit)
+end
+coroutine.wrap(XUZNRIM_fake_script)()

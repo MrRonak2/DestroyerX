@@ -120,7 +120,7 @@ coroutine.wrap(LMMBX_fake_script)()
 local function XUZNRIM_fake_script() -- Icon.LocalScript 
 	local script = Instance.new('LocalScript', Icon)
 
-	local loader = game.Parent.Parent
+	local loader = script.Parent.Parent
 	function exit()
 		loader:Destroy()
 	end

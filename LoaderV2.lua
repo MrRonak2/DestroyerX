@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local loader = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -10,8 +5,6 @@ local title = Instance.new("TextLabel")
 local check = Instance.new("TextLabel")
 local Icon = Instance.new("ImageButton")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-
---Properties:
 
 loader.Name = "loader"
 loader.Parent = game.CoreGui
@@ -66,9 +59,7 @@ Icon.Image = "rbxassetid://7072725342"
 
 UIAspectRatioConstraint.Parent = Icon
 
--- Scripts:
-
-local function LMMBX_fake_script() -- check.check_script 
+local function HEGVC_fake_script() -- check.check_script 
 	local script = Instance.new('LocalScript', check)
 
 	function exploitable()
@@ -116,15 +107,15 @@ local function LMMBX_fake_script() -- check.check_script
 	end
 	
 end
-coroutine.wrap(LMMBX_fake_script)()
-local function XUZNRIM_fake_script() -- Icon.LocalScript 
+coroutine.wrap(HEGVC_fake_script)()
+local function APIGU_fake_script() -- Icon.exit_script 
 	local script = Instance.new('LocalScript', Icon)
 
-	local loader = script.Parent.Parent
+	local loader = script.Parent.Parent.Parent
 	function exit()
 		loader:Destroy()
 	end
 	
 	script.Parent.MouseButton1Click:Connect(exit)
 end
-coroutine.wrap(XUZNRIM_fake_script)()
+coroutine.wrap(APIGU_fake_script)()

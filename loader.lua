@@ -84,7 +84,7 @@ infiniteyield.TextWrapped = true
 
 UICorner_4.Parent = infiniteyield
 
-local function WNBIXJJ_fake_script() -- title.LocalScript 
+local function GUDQXOB_fake_script() -- title.LocalScript 
 	local script = Instance.new('LocalScript', title)
 
 	local textlabel = script.Parent
@@ -96,8 +96,8 @@ local function WNBIXJJ_fake_script() -- title.LocalScript
 	end
 	typewrite(textlabel,"DESTROYER X LOADER")
 end
-coroutine.wrap(WNBIXJJ_fake_script)()
-local function SIZPQB_fake_script() -- destroyerx.LocalScript 
+coroutine.wrap(GUDQXOB_fake_script)()
+local function ZPYKEL_fake_script() -- destroyerx.LocalScript 
 	local script = Instance.new('LocalScript', destroyerx)
 
 	local textlabel = script.Parent
@@ -118,8 +118,8 @@ local function SIZPQB_fake_script() -- destroyerx.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(destroyerx)
 end
-coroutine.wrap(SIZPQB_fake_script)()
-local function DMQVZZ_fake_script() -- destroyerxv2.LocalScript 
+coroutine.wrap(ZPYKEL_fake_script)()
+local function YSEHZVZ_fake_script() -- destroyerxv2.LocalScript 
 	local script = Instance.new('LocalScript', destroyerxv2)
 
 	local textlabel = script.Parent
@@ -139,8 +139,8 @@ local function DMQVZZ_fake_script() -- destroyerxv2.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(destroyerxv2)
 end
-coroutine.wrap(DMQVZZ_fake_script)()
-local function JKYYC_fake_script() -- infiniteyield.LocalScript 
+coroutine.wrap(YSEHZVZ_fake_script)()
+local function BGHBVT_fake_script() -- infiniteyield.LocalScript 
 	local script = Instance.new('LocalScript', infiniteyield)
 
 	local textlabel = script.Parent
@@ -158,4 +158,48 @@ local function JKYYC_fake_script() -- infiniteyield.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(infiniteyield)
 end
-coroutine.wrap(JKYYC_fake_script)()
+coroutine.wrap(BGHBVT_fake_script)()
+local function FAMW_fake_script() -- main.Draggable 
+	local script = Instance.new('LocalScript', main)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(FAMW_fake_script)()

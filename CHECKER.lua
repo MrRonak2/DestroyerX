@@ -7,7 +7,7 @@ local Icon = Instance.new("ImageButton")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
 checker.Name = "checker"
-checker.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+checker.Parent = game.CoreGui
 
 main.Name = "main"
 main.Parent = checker

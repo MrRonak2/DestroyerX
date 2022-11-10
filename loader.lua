@@ -2,11 +2,11 @@ local loader = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
-local infiniteyield = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
 local destroyerx = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local destroyerxv2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local infiniteyield = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 
 loader.Name = "loader"
@@ -36,28 +36,12 @@ title.TextWrapped = true
 
 UICorner.Parent = main
 
-infiniteyield.Name = "infiniteyield"
-infiniteyield.Parent = loader
-infiniteyield.Active = false
-infiniteyield.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
-infiniteyield.BorderSizePixel = 0
-infiniteyield.Position = UDim2.new(0.422493696, 0, 0.536031008, 0)
-infiniteyield.Selectable = false
-infiniteyield.Size = UDim2.new(0, 118, 0, 51)
-infiniteyield.Text = ""
-infiniteyield.TextColor3 = Color3.fromRGB(255, 255, 255)
-infiniteyield.TextScaled = true
-infiniteyield.TextStrokeTransparency = 0.000
-infiniteyield.TextWrapped = true
-
-UICorner_2.Parent = infiniteyield
-
 destroyerx.Name = "destroyerx"
-destroyerx.Parent = loader
+destroyerx.Parent = main
 destroyerx.Active = false
 destroyerx.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 destroyerx.BorderSizePixel = 0
-destroyerx.Position = UDim2.new(0.521473825, 0, 0.536031008, 0)
+destroyerx.Position = UDim2.new(0.583393335, 0, 0.662404656, 0)
 destroyerx.Selectable = false
 destroyerx.Size = UDim2.new(0, 118, 0, 51)
 destroyerx.Text = ""
@@ -66,14 +50,14 @@ destroyerx.TextScaled = true
 destroyerx.TextStrokeTransparency = 0.000
 destroyerx.TextWrapped = true
 
-UICorner_3.Parent = destroyerx
+UICorner_2.Parent = destroyerx
 
 destroyerxv2.Name = "destroyerxv2"
-destroyerxv2.Parent = loader
+destroyerxv2.Parent = main
 destroyerxv2.Active = false
 destroyerxv2.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 destroyerxv2.BorderSizePixel = 0
-destroyerxv2.Position = UDim2.new(0.473483443, 0, 0.461511761, 0)
+destroyerxv2.Position = UDim2.new(0.312492728, 0, 0.329643637, 0)
 destroyerxv2.Selectable = false
 destroyerxv2.Size = UDim2.new(0, 118, 0, 51)
 destroyerxv2.Text = ""
@@ -82,9 +66,25 @@ destroyerxv2.TextScaled = true
 destroyerxv2.TextStrokeTransparency = 0.000
 destroyerxv2.TextWrapped = true
 
-UICorner_4.Parent = destroyerxv2
+UICorner_3.Parent = destroyerxv2
 
-local function NJPA_fake_script() -- title.LocalScript 
+infiniteyield.Name = "infiniteyield"
+infiniteyield.Parent = main
+infiniteyield.Active = false
+infiniteyield.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+infiniteyield.BorderSizePixel = 0
+infiniteyield.Position = UDim2.new(0.0509766564, 0, 0.662404656, 0)
+infiniteyield.Selectable = false
+infiniteyield.Size = UDim2.new(0, 118, 0, 51)
+infiniteyield.Text = ""
+infiniteyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+infiniteyield.TextScaled = true
+infiniteyield.TextStrokeTransparency = 0.000
+infiniteyield.TextWrapped = true
+
+UICorner_4.Parent = infiniteyield
+
+local function WNBIXJJ_fake_script() -- title.LocalScript 
 	local script = Instance.new('LocalScript', title)
 
 	local textlabel = script.Parent
@@ -96,27 +96,8 @@ local function NJPA_fake_script() -- title.LocalScript
 	end
 	typewrite(textlabel,"DESTROYER X LOADER")
 end
-coroutine.wrap(NJPA_fake_script)()
-local function CVSE_fake_script() -- infiniteyield.LocalScript 
-	local script = Instance.new('LocalScript', infiniteyield)
-
-	local textlabel = script.Parent
-	function typewrite(object,text)
-		for i = 1, #text,1 do
-			object.Text = string.sub(text,1,i)
-			wait(.05)
-		end
-	end
-	typewrite(textlabel,"Infinite Yield")
-	
-	function infiniteyield()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-	end
-	
-	script.Parent.MouseButton1Click:Connect(infiniteyield)
-end
-coroutine.wrap(CVSE_fake_script)()
-local function MYYTXE_fake_script() -- destroyerx.LocalScript 
+coroutine.wrap(WNBIXJJ_fake_script)()
+local function SIZPQB_fake_script() -- destroyerx.LocalScript 
 	local script = Instance.new('LocalScript', destroyerx)
 
 	local textlabel = script.Parent
@@ -137,8 +118,8 @@ local function MYYTXE_fake_script() -- destroyerx.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(destroyerx)
 end
-coroutine.wrap(MYYTXE_fake_script)()
-local function PMJBHF_fake_script() -- destroyerxv2.LocalScript 
+coroutine.wrap(SIZPQB_fake_script)()
+local function DMQVZZ_fake_script() -- destroyerxv2.LocalScript 
 	local script = Instance.new('LocalScript', destroyerxv2)
 
 	local textlabel = script.Parent
@@ -158,4 +139,23 @@ local function PMJBHF_fake_script() -- destroyerxv2.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(destroyerxv2)
 end
-coroutine.wrap(PMJBHF_fake_script)()
+coroutine.wrap(DMQVZZ_fake_script)()
+local function JKYYC_fake_script() -- infiniteyield.LocalScript 
+	local script = Instance.new('LocalScript', infiniteyield)
+
+	local textlabel = script.Parent
+	function typewrite(object,text)
+		for i = 1, #text,1 do
+			object.Text = string.sub(text,1,i)
+			wait(.05)
+		end
+	end
+	typewrite(textlabel,"Infinite Yield")
+	
+	function infiniteyield()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(infiniteyield)
+end
+coroutine.wrap(JKYYC_fake_script)()

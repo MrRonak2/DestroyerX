@@ -104,7 +104,7 @@ local function JHCEO_fake_script() -- check.check_script
 		script.Parent.TextColor3 = Color3.fromRGB(48, 255, 72)
 		typewrite(textlabel,"Remote Event Found")
 		wait(1.85)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrRonak2/DestroyerX/main/ScriptV2.lua",true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrRonak2/DestroyerX/main/loader.lua",true))()
 		script.Parent.Parent.Parent:Destroy()
 	else
 		local textlabel = script.Parent

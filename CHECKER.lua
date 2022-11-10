@@ -1,4 +1,4 @@
-local loader = Instance.new("ScreenGui")
+local checker = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local title = Instance.new("TextLabel")
@@ -6,11 +6,11 @@ local check = Instance.new("TextLabel")
 local Icon = Instance.new("ImageButton")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
-loader.Name = "loader"
-loader.Parent = game.CoreGui
+checker.Name = "checker"
+checker.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 main.Name = "main"
-main.Parent = loader
+main.Parent = checker
 main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 main.BorderSizePixel = 0
 main.Position = UDim2.new(0.412295729, 0, 0.391800225, 0)
@@ -26,7 +26,7 @@ title.BorderSizePixel = 0
 title.Position = UDim2.new(0.197014928, 0, 0, 0)
 title.Size = UDim2.new(0, 203, 0, 48)
 title.Font = Enum.Font.Gotham
-title.Text = "DESTROYER X LOADER"
+title.Text = "DESTROYER X CHECKER"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextScaled = true
 title.TextSize = 14.000
@@ -59,7 +59,7 @@ Icon.Image = "rbxassetid://7072725342"
 
 UIAspectRatioConstraint.Parent = Icon
 
-local function UMNST_fake_script() -- check.check_script 
+local function JHCEO_fake_script() -- check.check_script 
 	local script = Instance.new('LocalScript', check)
 
 	function exploitable()
@@ -121,15 +121,15 @@ local function UMNST_fake_script() -- check.check_script
 	end
 	
 end
-coroutine.wrap(UMNST_fake_script)()
-local function HQRRW_fake_script() -- Icon.exit_script 
+coroutine.wrap(JHCEO_fake_script)()
+local function ARCX_fake_script() -- Icon.exit_script 
 	local script = Instance.new('LocalScript', Icon)
 
-	local loader = script.Parent.Parent.Parent
+	local checker = script.Parent.Parent.Parent
 	function exit()
-		loader:Destroy()
+		checker:Destroy()
 	end
 	
 	script.Parent.MouseButton1Click:Connect(exit)
 end
-coroutine.wrap(HQRRW_fake_script)()
+coroutine.wrap(ARCX_fake_script)()

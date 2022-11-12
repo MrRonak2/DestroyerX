@@ -64,7 +64,7 @@ local textbox = Instance.new("TextBox")
 local UICorner_28 = Instance.new("UICorner")
 
 destroyerxv2.Name = "destroyerxv2"
-destroyerxv2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+destroyerxv2.Parent = game.CoreGui
 
 Main.Name = "Main"
 Main.Parent = destroyerxv2

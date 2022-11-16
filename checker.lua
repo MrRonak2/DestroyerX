@@ -7,7 +7,7 @@ local Icon = Instance.new("ImageButton")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
 checker.Name = "checker"
-checker.Parent = game.CoreGui
+checker.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 main.Name = "main"
 main.Parent = checker
@@ -59,19 +59,19 @@ Icon.Image = "rbxassetid://7072725342"
 
 UIAspectRatioConstraint.Parent = Icon
 
-local function KYPA_fake_script() -- check.check_script 
+local function FKXI_fake_script() -- check.check_script 
 	local script = Instance.new('LocalScript', check)
 
+	local Exploitable = false
 	function exploitable()
 		local replicated = game.ReplicatedStorage
-	
 		for _,v in pairs(replicated:GetChildren()) do
 			if v:IsA("RemoteEvent") then
 				if v.Name == "DeleteCar" then
-					script.Parent.Text= "Exploitable"
+					Exploitable = true
 					break
 				else
-					script.Parent.Text= "Is Not Exploitable"
+					Exploitable = false
 				end
 			end
 		end
@@ -93,7 +93,7 @@ local function KYPA_fake_script() -- check.check_script
 	wait(1)
 	exploitable()
 	
-	if script.Parent.Text == "Exploitable" then
+	if Exploitable == true then
 		local textlabel = script.Parent
 		function typewrite(object,text)
 			for i = 1, #text,1 do
@@ -121,8 +121,8 @@ local function KYPA_fake_script() -- check.check_script
 	end
 	
 end
-coroutine.wrap(KYPA_fake_script)()
-local function QNZT_fake_script() -- Icon.exit_script 
+coroutine.wrap(FKXI_fake_script)()
+local function EVPHR_fake_script() -- Icon.exit_script 
 	local script = Instance.new('LocalScript', Icon)
 
 	local checker = script.Parent.Parent.Parent
@@ -132,4 +132,4 @@ local function QNZT_fake_script() -- Icon.exit_script
 	
 	script.Parent.MouseButton1Click:Connect(exit)
 end
-coroutine.wrap(QNZT_fake_script)()
+coroutine.wrap(EVPHR_fake_script)()
